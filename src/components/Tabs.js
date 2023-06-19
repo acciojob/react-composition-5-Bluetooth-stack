@@ -14,7 +14,9 @@ const Tabs = ({tabs, ids }) => {
                     ))
                 }
             </ul>
-            <p>{active}</p>
+            {
+                active?<p>{active}</p>:<p>{tabs[0].content}</p>
+            }
         </div>
     )
 }
